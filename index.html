@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat Assistant</title>
+    <title>L'Oréal Smart Product Advisor</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -19,13 +19,18 @@
     <div class="page-wrapper">
       <!------- Header / Branding ------->
       <header class="site-header">
+        <img src="loreal-logo.png" alt="L'Oréal Paris" class="logo" />
         <h1 class="site-title">Smart Product Advisor</h1>
+        <p class="tagline">Because you're worth it.</p>
       </header>
 
       <!------- Chat Area ------->
       <main>
         <section class="chatbox">
-          <div id="chatWindow" class="chat-window">
+          <!-- Latest question shown above the response (LevelUp) -->
+          <div id="latestQuestion" class="latest-question" aria-live="polite" hidden></div>
+
+          <div id="chatWindow" class="chat-window" aria-live="polite">
             <!-- messages will be appended here via JS -->
           </div>
 
@@ -49,12 +54,11 @@
 
       <!------- Footer Links ------->
       <footer class="site-footer">
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <p>&copy; 2025 L'Oréal. All rights reserved.</p>
         <nav>
-          <!-- These URLs are placeholders -->
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Contact</a>
+          <a href="https://www.loreal.com/en/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="https://www.loreal.com/en/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a>
+          <a href="https://www.loreal.com/en/contact/" target="_blank" rel="noopener">Contact</a>
         </nav>
       </footer>
     </div>
